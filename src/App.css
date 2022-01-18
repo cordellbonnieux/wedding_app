@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Neonderthaw&family=Outfit&display=swap');
 p {
   font-family: 'Be Vietnam Pro';
+  color:#3e3d42;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Outfit';
+  color:#3e3d42;
+}
+body, html {
+  height:100%;
 }
 
 body {
-  background-color:#000;
+  background: rgb(131,58,180);
+  background: linear-gradient(176deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main {
   padding:20px 0;
-  height:100%;
 }
 
 .container {
   padding:10px;
-  background-color:#fff;
+  background-color:#e3e3e3;
   display:block;
   max-width:900px;
   margin:0 auto;
@@ -26,18 +33,30 @@ body {
 
 .container_inner {
   margin:auto auto;
-  border:10px solid #000;
+  border:10px solid #3e3d42;
   padding:35px 0;
 }
 
 input {
   margin:10px;
-  border:2px solid #000;
+  border:2px solid #3e3d42;
+  background-color:#fff;
+  border-radius:3px;
 }
 
 .button {
-  background-color:#fff;
   cursor:pointer;
+}
+
+.nameHolder {
+  display:inline-block;
+}
+
+#info {
+  text-align:left;
+  margin:0 auto;
+  max-width:600px;
+  padding:5px;
 }
 
 /*

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Login from './Login.jsx';
+import Main from './Main.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       </header>
       <div id="content">
         <Login />
+        <Main />
       </div>
     </div>
   );

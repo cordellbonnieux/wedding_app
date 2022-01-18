@@ -1,5 +1,10 @@
 
 export default function Login() {
+    let loginAttempts = 0;
+    function click() {
+        this.loginAttempts++;
+        console.log(this.loginAttempts);
+    }
     return (
         <div id="login" className="main">
             <div id="login_container" className="container">
@@ -10,7 +15,7 @@ export default function Login() {
                     </p>
                     <form id="login_form">
                         <input type="text" id="login_pass_text" />
-                        <input type="submit" value="enter" id="login_pass_submit" className="button" />
+                        <input type="submit" value="enter" id="login_pass_submit" className="button" onClick={click} />
                     </form>
                 </div>
             </div>
