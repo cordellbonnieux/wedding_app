@@ -57,22 +57,86 @@ export default function Main() {
                     </h2>
                     <p>
                         In order for us to know how much food, liquor, etc we will need to satiate all your appetites. 
-                        Please tell me who you are, who else you are bringing and what you do and don't like!
+                        Please tell me who you are, and what you do and don't like. If you are travelling together with another guest,
+                        you can RSVP for them below, by adding their name(s) to "Other person #X".
                     </p>
                     <form>
-                        <h4>Enter your party members names</h4>
-                        <div id="person1">
-                            <h5>Person #1:</h5>
+                        <h4>Please enter your name, and who ever is coming with you:</h4>
+                        <div id="person1" className="person">
+                            <h5>You</h5>
+                            <div className="nameHolder">
+                            <label for="firstName">First Name</label>
+                            <input type="text" className="firstName" required/>
+                            </div>
+                            <div className="holder">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" className="lastName" required/>
+                            </div>
+                        </div>
+                        <div id="person2" className="person">
+                            <h5>Other person #1</h5>
                             <div className="nameHolder">
                             <label for="firstName">First Name</label>
                             <input type="text" className="firstName"/>
                             </div>
-                            <div className="nameHolder">
+                            <div className="holder">
                             <label for="lastName">Last Name</label>
                             <input type="text" className="lastName"/>
                             </div>
                         </div>
-                        
+                        <div id="person3" className="person">
+                            <h5>Other person #2</h5>
+                            <div className="nameHolder">
+                            <label for="firstName">First Name</label>
+                            <input type="text" className="firstName"/>
+                            </div>
+                            <div className="holder">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" className="lastName"/>
+                            </div>
+                        </div>
+                        <div id="person4" className="person">
+                            <h5>Other person #3</h5>
+                            <div className="holder">
+                            <label for="firstName">First Name</label>
+                            <input type="text" className="firstName"/>
+                            </div>
+                            <div className="holder">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" className="lastName"/>
+                            </div>
+                        </div>
+                        <div id="contact">
+                            <h4>Contact</h4>
+                            <p>
+                                Not required, but if anything changes whatever you provide below is what I'll use to contact you.
+                            </p>
+                            <div className="holder">
+                                <label for="email">Email</label>
+                                <input type="email" className="email" required/>    
+                            </div>
+                            <div className="holder">
+                                <label for="phone">Phone (xxx-xxx-xxxx)</label>
+                                <input type="tel" className="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>    
+                            </div>
+                        </div>
+                        <div id="allergies">
+                            <h4>Food & Drink Allergies</h4>
+                            <p>
+                                Please list any food or drink allergies below.
+                            </p>
+                            <div className="holder">
+                                <input type="text" className="allergy"/>
+                                <input type="text" className="allergy"/> 
+                                <input type="text" className="allergy"/> 
+                                <input type="text" className="allergy"/> 
+                                <input type="text" className="allergy"/> 
+                                <input type="text" className="allergy"/> 
+                            </div>
+                        </div>
+                        <div id="submit">
+                            <input type="submit" value="RSVP" className="button" id="rsvp"/>
+                        </div>
                     </form>
                 </div>
             </div>
